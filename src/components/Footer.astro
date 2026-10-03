@@ -2,25 +2,20 @@
 const year = new Date().getFullYear();
 ---
 
-<footer class="w-full max-w-xl mx-auto px-6 mt-4">
+<footer class="w-full max-w-xl mx-auto px-6">
   <div
-    class="pt-4 pb-6 flex flex-col items-center sm:items-start gap-2 border-t border-zinc-800/80 text-xs leading-relaxed text-zinc-400"
+    class="pt-5 pb-8 border-t border-zinc-800/80 text-xs leading-relaxed text-zinc-400 flex flex-col items-start gap-1"
   >
-    <div class="flex flex-col gap-1 text-center sm:text-left">
-      <p>
-        &copy; {year} <strong class="font-semibold text-zinc-200">CodeBlueLife</strong>. All rights reserved.
-      </p>
-      <p class="text-[11.5px] text-zinc-500">
-        CodeBlueLife is a subsidiary of 
-        <a 
-          href="https://venoxity.dev" 
-          target="_blank"
-          rel="noopener noreferrer"
-          class="font-medium text-zinc-400 underline underline-offset-4 decoration-zinc-700 hover:text-blue-400 hover:decoration-blue-400 transition-colors"
-        >
-          Venoxity Network
-        </a>, operating as a distinct entity.
-      </p>
-    </div>
+    <p class="text-zinc-300">
+      &copy; {year} <strong class="font-semibold text-zinc-100">CodeBlueLife</strong>. All rights reserved.
+    </p>
+    <p class="text-[11.5px] text-zinc-500">
+      CodeBlueLife is a subsidiary of <a 
+        href="https://venoxity.dev" 
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-medium text-zinc-400 underline underline-offset-4 decoration-zinc-700 hover:text-blue-400 hover:decoration-blue-400/60 transition-colors"
+      >Venoxity Network</a>, operating as a distinct entity.
+    </p>
   </div>
 </footer>
