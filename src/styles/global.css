@@ -5,11 +5,28 @@
   --font-display: "Quantico", "Chakra Petch", ui-sans-serif, sans-serif;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 body {
   background-color: #11131a;
   color: #8b909f;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+  
   background-image: radial-gradient(
     rgba(255, 255, 255, 0.025) 1px,
     transparent 1px
