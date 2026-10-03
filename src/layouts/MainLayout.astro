@@ -1,9 +1,14 @@
 ---
 import "@fontsource-variable/inter";
-import "@fontsource/quantico";
+import "@fontsource/quantico/700.css";
 import "@fontsource/chakra-petch";
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
+
+const {
+  title = "CodeBlueLife",
+  description = "A modern FiveM framework.",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -11,15 +16,20 @@ import Footer from "../components/Footer.astro";
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CodeBlueLife</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#11131a" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body
-    class="min-h-screen flex flex-col justify-center items-center selection:bg-zinc-800 selection:text-white"
+    class="min-h-dvh flex flex-col selection:bg-zinc-800 selection:text-white"
   >
-    <div class="w-full flex-1 flex flex-col justify-center items-center py-12">
+    <div class="flex-1 flex items-center justify-center py-16">
       <slot />
-      <Footer />
     </div>
+    <Footer />
   </body>
 </html>
