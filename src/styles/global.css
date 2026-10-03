@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Quantico", "Chakra Petch", ui-sans-serif, sans-serif;
+}
+
 body {
   background-color: #11131a;
   color: #8b909f;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
   background-image: radial-gradient(
     rgba(255, 255, 255, 0.025) 1px,
     transparent 1px
