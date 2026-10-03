@@ -1,5 +1,9 @@
 ---
 const year = new Date().getFullYear();
+const links = [
+  { label: "Terms", href: "/terms" },
+  { label: "Privacy", href: "/privacy" },
+];
 ---
 
 <footer class="w-full max-w-xl mx-auto px-6">
@@ -20,6 +24,24 @@ const year = new Date().getFullYear();
         class="font-medium text-foreground/70 underline underline-offset-4 decoration-zinc-700 hover:text-blue-400 hover:decoration-blue-400/60 transition-colors"
         >Venoxity Network</a
       >, operating as a distinct entity.
+    </p>
+
+    <nav aria-label="Legal" class="mt-3 flex items-center gap-4">
+      {
+        links.map((l) => (
+          <a
+            href={l.href}
+            class="text-muted hover:text-blue-400 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 rounded-sm"
+          >
+            {l.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <p class="mt-3 text-[11px] text-muted/70">
+      Not affiliated with or endorsed by Rockstar Games, Take-Two Interactive,
+      or Cfx.re.
     </p>
   </div>
 </footer>
