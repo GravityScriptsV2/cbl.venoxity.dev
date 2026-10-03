@@ -3,4 +3,9 @@
 body {
   background-color: #11131a;
   color: #8b909f;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.025) 1px,
+    transparent 1px
+  );
+  background-size: 32px 32px;
 }
