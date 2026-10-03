@@ -17,7 +17,9 @@ import Footer from "../components/Footer.astro";
   <body
     class="min-h-screen flex flex-col justify-center items-center selection:bg-zinc-800 selection:text-white"
   >
-    <slot />
-    <Footer />
+    <div class="w-full flex-1 flex flex-col justify-center items-center py-12">
+      <slot />
+      <Footer />
+    </div>
   </body>
 </html>
