@@ -25,11 +25,11 @@ const {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body
-    class="min-h-dvh flex flex-col selection:bg-zinc-800 selection:text-white"
-  >
-    <div class="flex-1 flex items-center justify-center py-16">
-      <slot />
-    </div>
-    <Footer />
-  </body>
+   class="min-h-dvh flex flex-col items-center justify-center selection:bg-zinc-800 selection:text-white"
+ >
+   <div class="w-full py-12 flex flex-col items-center gap-14">
+     <slot />
+     <Footer />
+   </div>
+ </body>
 </html>
