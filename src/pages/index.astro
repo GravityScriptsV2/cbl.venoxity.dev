@@ -4,30 +4,30 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout>
   <main
-    class="w-full max-w-xl mx-auto px-6 flex flex-col items-start text-left animate-fade-in"
+    class="w-full max-w-xl mx-auto px-6 flex flex-col items-start text-left motion-safe:animate-fade-in"
   >
     <h1
-      class="mb-8 -ml-[0.04em] font-sans text-blue-400 font-black tracking-tight text-3xl sm:text-4xl leading-none [text-box:trim-both_cap_alphabetic]"
-      style="text-shadow: rgba(59, 130, 246, 0.6) 0px 0px 8px;"
+      class="mb-6 -ml-[0.04em] font-display font-bold tracking-tight text-5xl sm:text-6xl leading-none text-blue-400 [text-shadow:0_0_24px_rgb(59_130_246/0.45)]"
     >
       CodeBlueLife
     </h1>
 
-    <p
-      class="text-zinc-300 text-base sm:text-lg leading-relaxed mb-10 font-normal"
-    >
+    <p class="text-foreground/80 text-lg sm:text-xl leading-relaxed mb-10">
       A modern FiveM framework.
     </p>
 
-    <div class="flex flex-wrap items-center gap-3 mb-10 w-full sm:w-auto">
-       <a
-        href="https://github.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-zinc-900/80 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 text-xs font-medium transition-colors"
+    <a
+      href="https://github.com/CodeBlueLife"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="group inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/[0.03] hover:bg-white/[0.07] text-foreground/80 hover:text-white border border-border hover:border-zinc-600 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+    >
+      GitHub
+      <span
+        aria-hidden="true"
+        class="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+        >↗</span
       >
-        GitHub
-      </a>
-    </div>
+    </a>
   </main>
 </MainLayout>
