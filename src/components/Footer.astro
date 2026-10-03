@@ -4,18 +4,22 @@ const year = new Date().getFullYear();
 
 <footer class="w-full max-w-xl mx-auto px-6">
   <div
-    class="pt-5 pb-8 border-t border-zinc-800/80 text-xs leading-relaxed text-zinc-400 flex flex-col items-start gap-1"
+    class="pt-5 pb-8 border-t border-border text-xs leading-relaxed flex flex-col items-start gap-1"
   >
-    <p class="text-zinc-300">
-      &copy; {year} <strong class="font-semibold text-zinc-100">CodeBlueLife</strong>. All rights reserved.
+    <p class="text-foreground/80">
+      &copy; {year}
+      <strong class="font-semibold text-foreground">CodeBlueLife</strong>. All
+      rights reserved.
     </p>
-    <p class="text-[11.5px] text-zinc-500">
-      CodeBlueLife is a subsidiary of <a 
-        href="https://venoxity.dev" 
+    <p class="text-muted">
+      CodeBlueLife is a subsidiary of
+      <a
+        href="https://venoxity.dev"
         target="_blank"
         rel="noopener noreferrer"
-        class="font-medium text-zinc-400 underline underline-offset-4 decoration-zinc-700 hover:text-blue-400 hover:decoration-blue-400/60 transition-colors"
-      >Venoxity Network</a>, operating as a distinct entity.
+        class="font-medium text-foreground/70 underline underline-offset-4 decoration-zinc-700 hover:text-blue-400 hover:decoration-blue-400/60 transition-colors"
+        >Venoxity Network</a
+      >, operating as a distinct entity.
     </p>
   </div>
 </footer>
