@@ -16,18 +16,30 @@ import MainLayout from "../layouts/MainLayout.astro";
       A modern FiveM framework.
     </p>
 
-    <a
-      href="https://github.com/CodeBlueLife"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="group inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/[0.03] hover:bg-white/[0.07] text-foreground/80 hover:text-white border border-border hover:border-zinc-600 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
-    >
-      GitHub
-      <span
-        aria-hidden="true"
-        class="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-        >↗</span
+    <div class="flex flex-wrap items-center gap-3">
+      <a
+        href="https://github.com/CodeBlueLife"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/[0.03] hover:bg-white/[0.07] text-foreground/80 hover:text-white border border-border hover:border-zinc-600 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
       >
-    </a>
+        GitHub
+        <span
+          aria-hidden="true"
+          class="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+          >↗</span
+        >
+      </a>
+
+      <button
+        type="button"
+        disabled
+        aria-disabled="true"
+        title="Documentation is coming soon"
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/[0.02] text-muted/60 border border-border/60 text-sm font-medium cursor-not-allowed select-none"
+      >
+        Documentation
+      </button>
+    </div>
   </main>
 </MainLayout>
